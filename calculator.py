@@ -25,3 +25,9 @@ def sin(x, N):
 
 def divide(x, y):
     return x/y
+
+def sqrt(x):
+    return x**0.5
+
+def power2(x):
+    return x**2
