@@ -1,4 +1,4 @@
-import calculator, math
+import calculator, math, pytest
 tol = 1e-12
 
 def test_add_exercise1():
@@ -24,3 +24,11 @@ def test_sqrt_exercise4():
 
 def test_power2_exercise4():
     assert calculator.power2(9) == 81
+
+def test_add_raises_TypeError_for_string_arguments_exercise5():
+    with pytest.raises(TypeError):
+        calculator.add(1, "x")
+
+def test_divide_raises_ZeroDivisionError_when_div_by_zero_exercise5():
+    with pytest.raises(ZeroDivisionError):
+        calculator.divide(1, 0)

@@ -1,5 +1,3 @@
-from math import pi
-
 def add(x, y):
     return x + y
 
