@@ -14,7 +14,7 @@ def test_factorial_exercise4():
     assert calculator.factorial(6) == math.factorial(6)
 
 def test_sin_exercise4():
-    assert abs(calculator.sin(math.pi) - (-1)) < tol
+    assert abs(calculator.sin(math.pi/2, 10) - 1) < tol
 
 def test_divide_exercise4():
     assert abs(calculator.divide(6, 5) - 6/5) < tol

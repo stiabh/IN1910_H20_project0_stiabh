@@ -20,5 +20,5 @@ def factorial(N):
 def sin(x, N):
     s = 0
     for n in range(N+1):
-        s += ((-1)**n*x**(2*n+1))/factorial(2n+1)
+        s += ((-1)**n*x**(2*n+1))/factorial(2*n+1)
     return s
